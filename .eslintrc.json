@@ -124,6 +124,7 @@
       // ---------------------
       "require-unicode-regexp": "off",
       "prefer-named-capture-group": "off",
-      "prefer-regex-literals": "off" 
+      "prefer-regex-literals": "off",
+      "sort-keys": "off"
     }
 }

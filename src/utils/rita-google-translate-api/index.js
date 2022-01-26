@@ -13,7 +13,7 @@ function translate (text, opts, gotopts)
    gotopts = gotopts || {};
    // eslint-disable-next-line init-declarations
    let e;
-   [opts.from, opts.to].forEach(function (lang)
+   [opts.from, opts.to].forEach((lang) =>
    {
 
       if (lang && !languages.isSupported(lang))
@@ -29,7 +29,7 @@ function translate (text, opts, gotopts)
    if (e)
    {
 
-      return new Promise(function (resolve, reject)
+      return new Promise( (resolve, reject) =>
       {
 
          reject(e);
@@ -63,7 +63,7 @@ function translate (text, opts, gotopts)
 
    url = `${url}?${querystring.stringify(data)}`;
 
-   return got(url, gotopts).then(function (res)
+   return got(url, gotopts).then((res) =>
    {
 
       const result = {
@@ -95,7 +95,7 @@ function translate (text, opts, gotopts)
       if(Array.isArray(body))
       {
 
-         body.forEach(function (obj)
+         body.forEach((obj) =>
          {
 
             if (obj)
@@ -110,7 +110,7 @@ function translate (text, opts, gotopts)
       {
          if (body.sentences)
          {
-            body.sentences.forEach(function (obj)
+            body.sentences.forEach((obj) =>
             {
 
                if (obj.trans)
@@ -162,7 +162,7 @@ function translate (text, opts, gotopts)
       return result;
 
    }).
-      catch(function (err)
+      catch((err) =>
       {
 
          err.message += `\nUrl: ${url}`;
