@@ -13,7 +13,7 @@ const db = require("../../core/db");
 const process = require("process");
 const {stripIndent} = require("common-tags");
 const {oneLine} = require("common-tags");
-const secConverter = require("rita-seconds-converter");
+const secConverter = require("../../utils/rita-seconds-converter");
 const sendMessage = require("../../core/command.send");
 const botSend = require("../../core/send");
 
