@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node --optimize_for_size --max_old_space_size=460 src/bot.js",
-    "build": "rm -rf dist/ && tsc",
+    "build": "gulp build",
+    "watch": "gulp build && gulp watch",
+    "stop": "gulp stop",
     "deploy": "pm2 deploy",
     "serve": "pm2 startOrRestart ecosystem.config.js"
   },
