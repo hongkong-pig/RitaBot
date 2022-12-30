@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+
+  pbserver:
+    image: postgres
+    restart: always
+    ports:
+      - "6100:5432"
+    environment:
+      TZ: "Asia/Seoul"
+      POSTGRES_DB: rita
+      POSTGRES_USER: proxima
+      POSTGRES_PASSWORD: fnth1024
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+    container_name: rita_pg

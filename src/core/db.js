@@ -27,7 +27,8 @@ const db = process.env.DATABASE_URL.endsWith(".db") ?
       "dialectOptions": {
          "ssl": {
             "require": true,
-            "rejectUnauthorized": false
+            "rejectUnauthorized": false,
+            "native" : true,
          },
          acquireTimeout: 60000
       },
@@ -38,10 +39,6 @@ const db = process.env.DATABASE_URL.endsWith(".db") ?
       {
          logging: false,
          "dialectOptions": {
-            "ssl": {
-               "require": true,
-               "rejectUnauthorized": false
-            },
             acquireTimeout: 60000
          }
       }

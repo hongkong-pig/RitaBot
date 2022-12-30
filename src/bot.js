@@ -9,10 +9,7 @@ const time = {
    "mid": 30000,
    "short": 5000
 };
-const env = `${__dirname.slice(
-   0,
-   -3
-)}.env`;
+const env = `config/.env.${process.env.NODE_ENV || "development"}`;
 require("dotenv").config({
    "path": env
 });
@@ -24,7 +21,7 @@ const client = new discord.Client({
    "messageEditHistoryMaxSize": 0,
    "messageCacheLifetime": 30,
    "messageSweepInterval": 90,
-   "messageCacheMaxSize": 0
+   "messageCacheMaxSize": 0,
 });
 const auth = require("./core/auth");
 
