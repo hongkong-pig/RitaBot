@@ -49,7 +49,11 @@
     "querystring": "^0.2.1",
     "sequelize": "^6.6.5",
     "sqlite3": "^5.0.2",
-    "webhook-discord": "^3.7.8"
+    "webhook-discord": "^3.7.8",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-uglify-es": "^2.0.0"
   },
   "devDependencies": {
     "@kollavarsham/gulp-coveralls": "^0.3.4",
@@ -57,10 +61,6 @@
     "@babel/eslint-parser": "^7.14.7",
     "braces": "^3.0.2",
     "eslint": "^7.30.0",
-    "gulp": "^4.0.2",
-    "gulp-eslint": "^6.0.0",
-    "gulp-line-ending-corrector": "^1.0.3",
-    "gulp-uglify-es": "^2.0.0",
     "rita-gulp-watch": "^5.1.4"
   }
 }
