@@ -53,11 +53,11 @@
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
     "gulp-line-ending-corrector": "^1.0.3",
-    "gulp-uglify-es": "^2.0.0"
+    "gulp-uglify-es": "^2.0.0",
+    "babel-eslint": "^10.1.0"
   },
   "devDependencies": {
     "@kollavarsham/gulp-coveralls": "^0.3.4",
-    "babel-eslint": "^10.1.0",
     "@babel/eslint-parser": "^7.14.7",
     "braces": "^3.0.2",
     "eslint": "^7.30.0",
