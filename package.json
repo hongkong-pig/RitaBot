@@ -9,11 +9,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node --optimize_for_size --max_old_space_size=460 src/bot.js",
-    "build": "gulp build",
-    "coveralls": "gulp coveralls",
-    "dev": "gulp watch",
-    "lint": "gulp lint",
-    "finish": "echo \"All Tests Completed Successfully\" && exit 1"
+    "build": "rm -rf dist/ && tsc",
+    "deploy": "pm2 deploy",
+    "serve": "pm2 startOrRestart ecosystem.config.js"
   },
   "author": "Group Project",
   "contributors": [
